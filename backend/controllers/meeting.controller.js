@@ -75,7 +75,7 @@ exports.createMeeting = async (req, res) => {
 
     const mailOptions = {
       from: `"Admin" <${process.env.EMAIL_USER}>`,
-      to: "karthick131103@gmail.com", // process.env.EMAIL_USER, // Send to admin email
+      to: "emailList", // process.env.EMAIL_USER, // Send to admin email
       subject: `📅🎯 New Meeting Scheduled: ${req.body.title}`,
       html: `
       <div style="font-family: Arial, sans-serif; padding: 20px; border: 1px solid #eee;">
